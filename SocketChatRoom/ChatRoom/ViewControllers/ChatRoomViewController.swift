@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChatRoomViewController.swift
 //  SocketChatRoom
 //
 //  Created by mong on 2022/01/29.
@@ -7,13 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ChatRoomViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

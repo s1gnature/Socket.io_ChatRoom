@@ -7,6 +7,8 @@ target 'SocketChatRoom' do
   
   # Pods for SocketChatRoom
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   target 'SocketChatRoomTests' do
     inherit! :search_paths
