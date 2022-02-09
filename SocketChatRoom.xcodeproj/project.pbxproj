@@ -26,6 +26,12 @@
 		FAC8CA0727A69C55001CB9C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC8CA0627A69C55001CB9C9 /* GoogleService-Info.plist */; };
 		FAC8CA0927A6A21E001CB9C9 /* FBStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CA0827A6A21E001CB9C9 /* FBStoreManager.swift */; };
 		FAC8CA0C27A6A421001CB9C9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CA0B27A6A421001CB9C9 /* User.swift */; };
+		FAC8CA0F27AFEC93001CB9C9 /* ChatRoomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CA0E27AFEC93001CB9C9 /* ChatRoomTextFieldView.swift */; };
+		FAC8CA1127AFECA6001CB9C9 /* ChatRoomTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8CA1027AFECA6001CB9C9 /* ChatRoomTextFieldView.xib */; };
+		FAC8CA1527B1577B001CB9C9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CA1427B1577B001CB9C9 /* SignUpViewController.swift */; };
+		FAC8CA1927B1579F001CB9C9 /* LoginViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CA1827B1579F001CB9C9 /* LoginViewControllers.swift */; };
+		FAC8CA1B27B157D4001CB9C9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC8CA1A27B157D4001CB9C9 /* Login.storyboard */; };
+		FAC8CA1F27B15E8B001CB9C9 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CA1E27B15E8B001CB9C9 /* UIAlertController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,12 @@
 		FAC8CA0627A69C55001CB9C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAC8CA0827A6A21E001CB9C9 /* FBStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBStoreManager.swift; sourceTree = "<group>"; };
 		FAC8CA0B27A6A421001CB9C9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAC8CA0E27AFEC93001CB9C9 /* ChatRoomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTextFieldView.swift; sourceTree = "<group>"; };
+		FAC8CA1027AFECA6001CB9C9 /* ChatRoomTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTextFieldView.xib; sourceTree = "<group>"; };
+		FAC8CA1427B1577B001CB9C9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FAC8CA1827B1579F001CB9C9 /* LoginViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllers.swift; sourceTree = "<group>"; };
+		FAC8CA1A27B157D4001CB9C9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		FAC8CA1E27B15E8B001CB9C9 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +169,11 @@
 				FAC8C9D227A57EC6001CB9C9 /* Info.plist */,
 				FAC8C9F427A57FF9001CB9C9 /* Apps */,
 				FAC8C9CA27A57EC4001CB9C9 /* Main.storyboard */,
+				FAC8CA1A27B157D4001CB9C9 /* Login.storyboard */,
 				FAC8CA0127A581AC001CB9C9 /* Common */,
+				FAC8CA1D27B15E71001CB9C9 /* Extensions */,
+				FAC8CA1627B15780001CB9C9 /* Login */,
+				FAC8CA1227B1575B001CB9C9 /* SignUp */,
 				FAC8C9F527A5805B001CB9C9 /* UserList */,
 				FAC8C9F627A58068001CB9C9 /* ChatRoom */,
 				FAC8CA0827A6A21E001CB9C9 /* FBStoreManager.swift */,
@@ -206,6 +222,7 @@
 		FAC8C9F627A58068001CB9C9 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				FAC8CA0D27AFEC47001CB9C9 /* Views */,
 				FAC8C9FA27A580AD001CB9C9 /* ViewControllers */,
 			);
 			path = ChatRoom;
@@ -250,6 +267,55 @@
 				FAC8CA0B27A6A421001CB9C9 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FAC8CA0D27AFEC47001CB9C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8CA0E27AFEC93001CB9C9 /* ChatRoomTextFieldView.swift */,
+				FAC8CA1027AFECA6001CB9C9 /* ChatRoomTextFieldView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAC8CA1227B1575B001CB9C9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8CA1327B15767001CB9C9 /* ViewControllers */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		FAC8CA1327B15767001CB9C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8CA1427B1577B001CB9C9 /* SignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAC8CA1627B15780001CB9C9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8CA1727B1578C001CB9C9 /* ViewControllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FAC8CA1727B1578C001CB9C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8CA1827B1579F001CB9C9 /* LoginViewControllers.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAC8CA1D27B15E71001CB9C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8CA1E27B15E8B001CB9C9 /* UIAlertController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +428,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC8CA0027A58199001CB9C9 /* UserListTableViewCell.xib in Resources */,
+				FAC8CA1127AFECA6001CB9C9 /* ChatRoomTextFieldView.xib in Resources */,
+				FAC8CA1B27B157D4001CB9C9 /* Login.storyboard in Resources */,
 				FAC8C9D127A57EC6001CB9C9 /* LaunchScreen.storyboard in Resources */,
 				FAC8CA0727A69C55001CB9C9 /* GoogleService-Info.plist in Resources */,
 				FAC8C9CE27A57EC6001CB9C9 /* Assets.xcassets in Resources */,
@@ -497,10 +565,14 @@
 				FAC8C9FF27A58199001CB9C9 /* UserListTableViewCell.swift in Sources */,
 				FAC8C9C927A57EC4001CB9C9 /* UserListViewController.swift in Sources */,
 				FAC8CA0927A6A21E001CB9C9 /* FBStoreManager.swift in Sources */,
+				FAC8CA1527B1577B001CB9C9 /* SignUpViewController.swift in Sources */,
+				FAC8CA1927B1579F001CB9C9 /* LoginViewControllers.swift in Sources */,
+				FAC8CA1F27B15E8B001CB9C9 /* UIAlertController+Extension.swift in Sources */,
 				FAC8CA0C27A6A421001CB9C9 /* User.swift in Sources */,
 				FAC8C9C527A57EC4001CB9C9 /* AppDelegate.swift in Sources */,
 				FAC8C9C727A57EC4001CB9C9 /* SceneDelegate.swift in Sources */,
 				FAC8C9F827A58074001CB9C9 /* ChatRoomViewController.swift in Sources */,
+				FAC8CA0F27AFEC93001CB9C9 /* ChatRoomTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +757,7 @@
 				INFOPLIST_FILE = SocketChatRoom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -714,7 +786,7 @@
 				INFOPLIST_FILE = SocketChatRoom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -8,6 +8,7 @@
 import UIKit
 
 final class ChatRoomViewController: UIViewController {
+    @IBOutlet var chatRoomTextFieldView: ChatRoomTextFieldView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

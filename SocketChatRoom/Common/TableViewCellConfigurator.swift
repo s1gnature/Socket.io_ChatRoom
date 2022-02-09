@@ -11,11 +11,18 @@
 
 import UIKit
 
-protocol TableViewCellConfigurator {
+protocol XibConfigurator {
+}
+extension XibConfigurator {
+    static var nibName: String {
+        return String(describing: self)
+    }
+}
+
+protocol TableViewCellConfigurator: XibConfigurator {
     static func register(to tableView: UITableView)
     static func dequeueReusableCell(from tableView: UITableView) -> Self?
     static var reuseIdentifier: String { get }
-    static var nibName: String { get }
 }
 
 extension TableViewCellConfigurator {
@@ -30,10 +37,6 @@ extension TableViewCellConfigurator {
     }
     
     static var reuseIdentifier: String {
-        return String(describing: self)
-    }
-    
-    static var nibName: String {
         return String(describing: self)
     }
 }

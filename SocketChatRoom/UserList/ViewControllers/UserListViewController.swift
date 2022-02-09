@@ -25,6 +25,7 @@ final class UserListViewController: UIViewController {
     
     private func configureUserListTableView() {
         userListTableView.dataSource = self
+        userListTableView.delegate = self
         
         UserListTableViewCell.register(to: userListTableView)
     }
@@ -59,5 +60,13 @@ extension UserListViewController: UITableViewDataSource {
         cell.configure(nickName: user.nickname, profileImage: UIImage(), stateMessage: user.stateMessage)
         
         return cell
+    }
+}
+
+extension UserListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "didSelectCellSegue", sender: self)
     }
 }
